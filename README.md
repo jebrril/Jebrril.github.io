@@ -1,10 +1,48 @@
-<!DOCTYPE html>
-<html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Page des Chats</title>
-    <!-- Vos balises meta et liens peuvent être ajoutées ici -->
+    <meta name="description" content="Une page dédiée à l'adoption, la nourriture, la vente et les soins des chats">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Vos styles CSS peuvent être ajoutés ici pour la mise en forme */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,28 +61,27 @@
     <main>
         <section id="adoption">
             <h2>Adoption</h2>
-            <!-- Contenu sur l'adoption des chats -->
+            <p>Informations sur l'adoption des chats...</p>
         </section>
 
         <section id="nourriture">
             <h2>Nourriture</h2>
-            <!-- Contenu sur la nourriture pour chats -->
+            <p>Conseils sur la nourriture pour chats...</p>
         </section>
 
         <section id="vente">
             <h2>Vente</h2>
-            <!-- Contenu sur la vente d'accessoires pour chats -->
+            <p>Produits et accessoires pour chats à vendre...</p>
         </section>
 
         <section id="soins">
             <h2>Soins</h2>
-            <!-- Contenu sur les soins et la santé des chats -->
+            <p>Conseils sur les soins et la santé des chats...</p>
         </section>
     </main>
 
     <footer>
         <p>Contactez-nous pour toute question sur les chats</p>
-        <!-- Informations de contact -->
     </footer>
 </body>
 
