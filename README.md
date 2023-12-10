@@ -48,6 +48,19 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
+        .nav-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-buttons button {
+            padding: 8px 16px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: #fff;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -68,25 +81,45 @@
         <section id="adoption">
             <h2>Adoption</h2>
             <img class="cat-image" src="adoption-cat.jpg" alt="Adoption Cat">
-            <p>Discover our loving cats available for adoption. They are looking for a forever home!</p>
+            <p>Find your perfect furry companion for adoption. Our cats are waiting for a loving home where they can bring joy and happiness!</p>
+            <div class="nav-buttons">
+                <button><a href="#food">Food</a></button>
+                <button><a href="#sale">Sale</a></button>
+                <button><a href="#care">Care</a></button>
+            </div>
         </section>
 
         <section id="food">
             <h2>Food</h2>
             <img class="cat-image" src="food-cat.jpg" alt="Food Cat">
-            <p>Explore the best food options for your feline friend. Keep them happy and healthy!</p>
+            <p>Discover the best nutrition options for your furry friends. From premium brands to homemade recipes, keep your cats healthy and satisfied!</p>
+            <div class="nav-buttons">
+                <button><a href="#adoption">Adoption</a></button>
+                <button><a href="#sale">Sale</a></button>
+                <button><a href="#care">Care</a></button>
+            </div>
         </section>
 
         <section id="sale">
             <h2>Sale</h2>
             <img class="cat-image" src="sale-cat.jpg" alt="Sale Cat">
-            <p>Find accessories and essentials for your cat. Choose from a variety of high-quality products!</p>
+            <p>Explore a variety of accessories and essentials for your cats. Choose from toys, grooming tools, and more to keep your cats entertained and healthy!</p>
+            <div class="nav-buttons">
+                <button><a href="#adoption">Adoption</a></button>
+                <button><a href="#food">Food</a></button>
+                <button><a href="#care">Care</a></button>
+            </div>
         </section>
 
         <section id="care">
             <h2>Care</h2>
             <img class="cat-image" src="care-cat.jpg" alt="Care Cat">
-            <p>Learn how to take care of your cat's well-being. Tips for grooming, health, and happiness!</p>
+            <p>Learn how to provide the best care for your cats. From grooming routines to health tips, ensure your cats lead happy and healthy lives!</p>
+            <div class="nav-buttons">
+                <button><a href="#adoption">Adoption</a></button>
+                <button><a href="#food">Food</a></button>
+                <button><a href="#sale">Sale</a></button>
+            </div>
         </section>
     </main>
 
