@@ -7,6 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link your CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styling */
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button[type="submit"] {
+            background-color: #27ae60;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,7 +65,8 @@
         <section id="home">
             <h2>Welcome to Catlive Chat</h2>
             <button>Start Chatting</button>
-            <img src="placeholder-image.jpg" alt="Placeholder Image">
+            <img src="placeholder-image1.jpg" alt="Image 1">
+            <img src="placeholder-image2.jpg" alt="Image 2">
             <!-- Content for the home section -->
         </section>
 
