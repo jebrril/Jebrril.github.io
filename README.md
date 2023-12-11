@@ -1,4 +1,3 @@
-</head>
 <body>
     <header>
         <h1>Welcome to the Cats Page</h1>
