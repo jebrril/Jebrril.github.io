@@ -1,11 +1,15 @@
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cats Page</title>
-    <meta name="description" content="A page dedicated to adoption, food, sale, and care for cats">
+    <title>Catlive Chat - Pour les Amoureux des Chats</title>
+    <meta name="description" content="Catlive Chat, une application de messagerie pour les passionnés de chats">
+    <meta name="keywords" content="chats, chat, messagerie, HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- Vos autres balises meta ou liens vers d'autres ressources -->
 </head>
+<body>
+    <!-- Votre contenu HTML ici -->
+</body>
 <body>
     <header>
         <h1>Welcome to the Cats Page</h1>
