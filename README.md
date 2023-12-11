@@ -1,4 +1,3 @@
-</head>
     <meta charset="UTF-8">
     <title>Cats Page</title>
     <meta name="description" content="A page dedicated to adoption, food, sale, and care for cats">
