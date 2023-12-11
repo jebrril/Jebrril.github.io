@@ -31,6 +31,7 @@
     <img src="cat-image2.jpg" alt="Chat Image 2">
     <!-- Autres éléments de contenu -->
 </section>
+    
     <main>
         <section id="adoption">
             <h2>Adoption</h2>
