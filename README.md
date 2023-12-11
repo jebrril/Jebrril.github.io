@@ -23,7 +23,14 @@
             </ul>
         </nav>
     </header>
-
+<section id="home">
+    <h2>Partagez Votre Passion pour les Chats</h2>
+    <p>Découvrez l'univers félin à travers Catlive Chat.</p>
+    <button>Démarrer</button>
+    <img src="cat-image1.jpg" alt="Chat Image 1">
+    <img src="cat-image2.jpg" alt="Chat Image 2">
+    <!-- Autres éléments de contenu -->
+</section>
     <main>
         <section id="adoption">
             <h2>Adoption</h2>
@@ -46,7 +53,7 @@
                 <button><a href="#care">Care</a></button>
             </div>
         </section>
-
+<img src="chemin_vers_votre_image.jpg" alt="Description de l'image">
         <section id="sale">
             <h2>Sale</h2>
             <img class="cat-image" src="sale-cat.jpg" alt="Sale Cat">
