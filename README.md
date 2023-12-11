@@ -19,6 +19,7 @@
                 <li><a href="#food">Food</a></li>
                 <li><a href="#sale">Sale</a></li>
                 <li><a href="#care">Care</a></li>
+                <li><a href="#care">Care</a></li>
             </ul>
         </nav>
     </header>
