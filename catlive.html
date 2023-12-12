@@ -4,7 +4,7 @@
     <meta name="description" content="Catlive Chat, une application de messagerie pour les passionnés de chats">
     <meta name="keywords" content="chats, chat, messagerie, HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/catlivecss.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- Vos autres balises meta ou liens vers d'autres ressources -->
 </head>
 <body>
