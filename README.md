@@ -77,15 +77,20 @@
             </div>
         </section>
     </main>
- <footer>
-        <div class="social-links">
-            <a href="https://www.facebook.com/votrepage" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://twitter.com/votrepage" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://www.instagram.com/votrepage" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://api.whatsapp.com/send?phone=+1234567890" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            <!-- Ajoutez d'autres liens vers vos réseaux sociaux -->
-        </div>
-        <p>&copy; 2023 CatLive</p>
+<main>
+    <!-- ... Votre contenu précédent ... -->
+
+    <div class="activation-links">
+        <p>Activer :</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; 2023 CatLive</p>
         <!-- Autres liens ou contenu dans le pied de page -->
     </footer>
+</main>
 </body>
