@@ -231,11 +231,8 @@
             <a href="https://www.facebook.com/votrepage">Facebook</a>
             <a href="https://twitter.com/votrecompte">Twitter</a>
             <a href="https://www.instagram.com/votrecompte">Instagram</a>
-            <a href="https://wa.me/votrenumero">WhatsApp</a>
-
-
         </div>
-
+no contact : +212 0666812087
         <p>&copy; 2023 CatLive</p>
     </footer>
 </body>
