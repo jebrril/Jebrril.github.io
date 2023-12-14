@@ -138,7 +138,7 @@
     <main>
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Welcome to "Cat," your one-stop guide to the enchanting world of feline companions. Whether you're a passionate cat owner, considering adopting a cat, or just curious about these fascinating creatures, this document is designed to provide a comprehensive overview of all things cat-related.</p>
+            <p>Welcome to "Catlive" your one-stop guide to the enchanting world of feline companions. Whether you're a passionate cat owner, considering adopting a cat, or just curious about these fascinating creatures, this document is designed to provide a comprehensive overview of all things cat-related.</p>
         </section>
 
         <section id="home">
