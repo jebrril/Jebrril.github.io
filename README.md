@@ -228,11 +228,11 @@
     <footer>
         <div class="activation-links">
             <p>Notez-nous sur les réseaux sociaux :</p>
-            <a href="https://[www.facebook.com/votrepage](https://www.facebook.com/profile.php?id=61554624002589])">Facebook</a>
+            <a href="https://[www.facebook.com/profile.php?id=61554624002589])">Facebook</a>
             <a href="https://www.instagram.com/votrecompte">Instagram</a>
-            <a href="https://[www.youtube.com/votrepage](https://www.youtube.com/@josef-jebril)]">youtube</a>
+            <a href="https://[www.youtube.com/josef-jebril)]">youtube</a>
         </div>
-no contact : TEL +212 0666812087  +212 0687004842                                                                                                                                                                                                                                                                 gmail :  catlive889@gmail.com
-        <p>&copy; 2023 CatLive</p>
+ TEL +212 0666812087  +212 0687004842   ---🐱---    gmail :  catlive889@gmail.com                                                                                                                        
+ <p>&copy; 2023 CatLive</p>
     </footer>
 </body>
