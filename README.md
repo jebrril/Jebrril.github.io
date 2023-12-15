@@ -229,7 +229,7 @@
         <div class="activation-links">
             <p>Notez-nous sur les réseaux sociaux :</p>
             <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
-            <a href="https://www.instagram.com/Catlive889">Instagram</a>
+            <a href="https://www.instagram.com/Catlive">Instagram</a>
             <a href="https://www.youtube.com/@josef-jebril">youtube</a>
         </div>
  TEL +212 0666812087  +212 0687004842   ---🐱---    gmail :  catlive889@gmail.com                                                                                                                        
