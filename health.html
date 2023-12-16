@@ -152,7 +152,33 @@
             <p>🤒💊🏋️‍♂️</p>
         </section>
 
-        <!-- D'autres sections pour d'autres sujets -->
+         <div class="slideshow-container">
+            <div class="slides">
+                <img src="images/catlive14.jpg" alt="Cat Image 1" style="width: 400px; height: 200px;">
+                <img src="images/catlive15.jpg" alt="Cat Image 2" style="width: 400px; height: 200px;">
+                <img src="images/catlive16.jpg" alt="Cat Image 3" style="width: 400px; height: 200px;">
+                
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+
+        <!-- Points de navigation -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            
+        </div>
+        
+        <!-- Votre barre de notation -->
+        <div class="review-bar">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
 
     </main>
     <footer>
@@ -165,4 +191,41 @@
         <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
         <p>&copy; 2023 CatLive</p>
     </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.querySelectorAll('.slides img');
+            const dots = document.querySelectorAll('.dot');
+            
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(' active', '');
+            }
+
+            slides[slideIndex - 1].style.display = 'block';
+            dots[slideIndex - 1].className += ' active';
+        }
+    </script>
 </body>
