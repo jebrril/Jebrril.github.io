@@ -168,7 +168,7 @@
 
         <section id="Popular Cat Breeds">
             <h2>Popular Cat Breeds</h2>
-            <img src="images/catlive3.jpg" alt="Cat popular">
+            <img src="images/catlive17.jpg" alt="Cat Care">
             <p>Discover the diversity of cat breeds, each with its own unique characteristics, temperament, and charm. Whether you prefer the sleek Siamese, the regal Persian, or the playful Bengal, find the perfect match for your lifestyle!</p>
         </section>
 
