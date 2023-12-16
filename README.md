@@ -202,15 +202,15 @@
         </section>
 
         <section id="Resources">
-            <h2>Resources</h2>
-            <p>Explore additional resources for further information on cat care, behavior, and community:</p>
-            <ul>
-                <li><a href="#American Association of Feline Practitioners (AAFP)">American Association of Feline Practitioners (AAFP)</a></li>
-                <li><a href="#The Cat Fanciers' Association (CFA) (AAFP)">The Cat Fanciers' Association (CFA)</a></li>
-                <li><a href="#Cat Care Society">Cat Care Society</a></li>
-                <li><a href="#National Geographic's Cats: Everything You Need to Know">National Geographic's Cats: Everything You Need to Know</a></li>
-            </ul>
-        </section>
+    <h2>Resources</h2>
+    <p>Explore additional resources for further information on cat care, behavior, and community:</p>
+    <ul>
+        <li><a href="https://catvets.com/">American Association of Feline Practitioners (AAFP)</a></li>
+        <li><a href="https://cfa.org/kids/breeds-and-colors/cfa-breeds/">The Cat Fanciers' Association (CFA)</a></li>
+        <li><a href="https://catcaresociety.org/">Cat Care Society</a></li>
+        <li><a href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat">National Geographic's Cats: Everything You Need to Know</a></li>
+    </ul>
+</section>
 
         <div class="review-bar">
             <span class="star">&#9733;</span>
@@ -231,4 +231,4 @@
         <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
         <p>&copy; 2023 CatLive</p>
     </footer>
-</body>
+</body> 

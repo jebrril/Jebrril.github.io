@@ -1,8 +1,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>health</title>
+    <title>CatLive</title>
     <style>
+        /* Réinitialisation des styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         /* Styles généraux */
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +24,14 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+        }
+
+        header h1 {
+            background-color: #fff;
+            color: #663399;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
         }
 
         nav ul {
@@ -55,27 +70,64 @@
         }
 
         section h2 {
-            color: #333;
+            color: #fff;
             font-size: 24px;
             margin-bottom: 10px;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
+            background-color: #663399;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        section h2::after {
+            content: " 🐱";
+            font-size: 24px;
         }
 
         section p {
-            color: #666;
+            color: #333;
             line-height: 1.6;
         }
-<body></style>
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .activation-links a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .activation-links a:hover {
+            color: #ffcc00;
+        }
+
+        .review-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .star {
+            color: #ffcc00;
+            font-size: 24px;
+            margin: 0 2px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>health</h1>
+        <h1>Health🤒💊</h1>
         <nav>
             <ul>
-                <li><a href="catlive.html">HOME</a></li>
+                <li><a href="catlive.html">Home</a></li>
                 <li><a href="adoption.html">Adoption</a></li>
-                <li><a href="food.html">FOOD</a></li>
+                <li><a href="food.html">Food</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="everyday_life.html">Everyday Life</a></li>
             </ul>
@@ -103,4 +155,14 @@
         <!-- D'autres sections pour d'autres sujets -->
 
     </main>
+    <footer>
+        <div class="activation-links">
+            <p> Useful links</p>
+            <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
+            <a href="https://www.instagram.com/catlive889/">Instagram</a>
+            <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
+        </div>
+        <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
+        <p>&copy; 2023 CatLive</p>
+    </footer>
 </body>
