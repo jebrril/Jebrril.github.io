@@ -143,7 +143,7 @@
         <section id="home">
             <h2>Share Your Passion for Cats</h2>
             <p>Discover the feline universe through Catlive Chat.</p>
-            <img src="images/catlive1.jpg" alt="Cat Image 1"style="width: 700px;height: 500px;">
+            <img src="images/catlive1.jpg" alt="Cat Image 1">
             <!-- Other content elements -->
         </section>
 <section id="table-of-contents">
