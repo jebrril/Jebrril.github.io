@@ -168,31 +168,31 @@
 
         <section id="Popular Cat Breeds">
             <h2>Popular Cat Breeds</h2>
-            <img src="images/catlive3.jpg" alt="Food Cat">
+            <img src="images/catlive3.jpg" alt="Cat Image 1"> <style="width: 700px;height: 500px;">
             <p>Discover the diversity of cat breeds, each with its own unique characteristics, temperament, and charm. Whether you prefer the sleek Siamese, the regal Persian, or the playful Bengal, find the perfect match for your lifestyle!</p>
         </section>
 
         <section id="Cat Care and Health">
             <h2>Cat Care and Health</h2>
-            <img src="images/catlive3.jpg" alt="Cat for Sale">
+            <img src="images/catlive4.jpg" alt="Cat for Sale">
             <p>Ensure the well-being of your feline companion with essential tips on cat care and health. From grooming and vaccinations to regular veterinary check-ups, this section covers everything you need to keep your cat happy and healthy.</p>
         </section>
 
         <section id="Behavior and Communication">
             <h2>Behavior and Communication</h2>
-            <img src="images/catlive4.jpg" alt="Cat Care">
+            <img src="images/catlive5.jpg" alt="Cat Care">
             <p>Decode the language of cats by understanding their behavior and communication cues. Explore the meaning behind different meows, purrs, and body language, fostering a deeper connection with your furry friend.</p>
         </section>
 
         <section id="Feeding and Nutrition">
             <h2>Feeding and Nutrition</h2>
-            <img src="images/catlive5.jpg" alt="Cat Care">
+            <img src="images/catlive6.jpg" alt="Cat Care">
             <p>Navigate the world of cat nutrition, from choosing the right cat food to understanding dietary requirements at different life stages. Learn about portion control, treats, and maintaining a balanced diet for optimal feline health.</p>
         </section>
 
         <section id="Training and Enrichment">
             <h2>Training and Enrichment</h2>
-            <img src="images/catlive6.jpg" alt="Cat Care">
+            <img src="images/catlive7.jpg" alt="Cat Care">
             <p>Discover effective training techniques and enrichment activities to stimulate your cat's mind and body. Whether teaching basic commands or providing engaging toys, enhance the quality of life for both you and your feline companion.</p>
         </section>
 
