@@ -130,6 +130,7 @@
                 <li><a href="health.html">Health</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="everyday_life.html">Everyday Life</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
