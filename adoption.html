@@ -1,8 +1,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How To Deal And Be Humanized With CATLIVE</title>
+    <title>CatLive</title>
     <style>
+        /* Réinitialisation des styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         /* Styles généraux */
         body {
             font-family: Arial, sans-serif;
@@ -11,40 +18,47 @@
             background-color: #f5f5f5;
             color: #333;
         }
+
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px;
         }
+
+        header h1 {
+            background-color: #fff;
+            color: #663399;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
         nav ul {
             list-style-type: none;
             padding: 0;
             text-align: center;
             margin-top: 20px;
         }
+
         nav ul li {
             display: inline;
             margin-right: 20px;
         }
+
         nav ul li a {
             text-decoration: none;
             color: #fff;
             font-weight: bold;
-            transition: color 0.3s ease;
         }
-        nav ul li a:hover {
-            color: #ffcc00;
-        }
+
         main {
             padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        h1 {
-            margin-bottom: 20px;
-        }
+
         section {
             background-color: #fff;
             padding: 20px;
@@ -54,6 +68,56 @@
             width: 80%;
             max-width: 800px;
         }
+
+        section h2 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 10px;
+            background-color: #663399;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        section h2::after {
+            content: " 🐱";
+            font-size: 24px;
+        }
+
+        section p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .activation-links a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .activation-links a:hover {
+            color: #ffcc00;
+        }
+
+        .review-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .star {
+            color: #ffcc00;
+            font-size: 24px;
+            margin: 0 2px;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +125,7 @@
         <h1>Adoption</h1>
         <nav>
             <ul>
-                <li><a href="catlive.html">HOME</a></li>
+                <li><a href="catlive.html">Home</a></li>
                 <li><a href="food.html">Food</a></li>
                 <li><a href="health.html">Health</a></li>
                 <li><a href="education.html">Education</a></li>
@@ -69,6 +133,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <h2>🐱 The Cat's Choice</h2>
@@ -102,4 +167,15 @@
             <img class="cat-image" src="adult-cat.jpg" alt="Adult Cat">
         </section>
     </main>
+
+    <footer>
+        <div class="activation-links">
+            <p> Useful links</p>
+            <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
+            <a href="https://www.instagram.com/catlive889/">Instagram</a>
+            <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
+        </div>
+        <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
+        <p>&copy; 2023 CatLive</p>
+    </footer>
 </body>
