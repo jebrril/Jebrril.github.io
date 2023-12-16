@@ -19,7 +19,6 @@
             color: #333;
         }
 
-
         header {
             background-color: #333;
             color: #fff;
@@ -144,13 +143,10 @@
         <section id="home">
             <h2>Share Your Passion for Cats</h2>
             <p>Discover the feline universe through Catlive Chat.</p>
-            <button><a href="start.html">Start</a></button>
             <img src="images/catlive1.jpg" alt="Cat Image 1">
-            <img src="cat-image2.jpg" alt="Cat Image 2">
             <!-- Other content elements -->
         </section>
-
-        <section id="table-of-contents">
+<section id="table-of-contents">
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="#history-of-cats">History of Cats</a></li>
@@ -223,16 +219,16 @@
             <span class="star">&#9733;</span>
             <span class="star">&#9733;</span>
         </div>
-    </main>
+</main>
 
     <footer>
         <div class="activation-links">
-            <p>Notez-nous sur les réseaux sociaux :</p>
+            <p> Useful links</p>
             <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
-            <a href="https://www.instagram.com/Catlive">Instagram</a>
-            <a href="https://www.youtube.com/@josef-jebril">youtube</a>
+            <a href="https://www.instagram.com/catlive889/">Instagram</a>
+            <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
         </div>
- TEL +212 0666812087  +212 0687004842   ---🐱---    gmail :  catlive889@gmail.com                                                                                                                        
- <p>&copy; 2023 CatLive</p>
+        <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
+        <p>&copy; 2023 CatLive</p>
     </footer>
 </body>
