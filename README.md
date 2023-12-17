@@ -237,7 +237,7 @@ img {vertical-align: middle;}
         <h1>How To Deal And Be Humanized With CATLIVE</h1>
         <nav>
             <ul>
-                <li><a href="adoption2.html">Adoption</a></li>
+                <li><a href="adoption.html">Adoption</a></li>
                 <li><a href="food.html">Food</a></li>
                 <li><a href="health.html">Health</a></li>
                 <li><a href="education.html">Education</a></li>
