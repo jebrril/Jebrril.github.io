@@ -231,7 +231,7 @@ img {vertical-align: middle;}
 <body>
     <header>
         <div class="logo">
-            <img src="images/catlive3.jpg" alt="CatLive Logo">
+            <img src="images/catlive18.jpg" alt="CatLive Logo">
         </div>
         
         <h1>How To Deal And Be Humanized With CATLIVE</h1>
