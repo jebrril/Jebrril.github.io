@@ -74,7 +74,37 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -233,102 +263,46 @@ img {vertical-align: middle;}
         <div class="logo">
             <img src="images/catlive3.jpg" alt="CatLive Logo">
         </div>
-        <h1>Health🤒💊</h1>
+        <h1>How To Deal And Be Humanized With CATLIVE</h1>
         <nav>
             <ul>
                 <li><a href="catlive.html">Home</a></li>
                 <li><a href="adoption.html">Adoption</a></li>
                 <li><a href="food.html">Food</a></li>
+                <li><a href="health.html">Health</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="everyday_life.html">Everyday Life</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+                
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="cat-lifestyle">
-            <h2>Cat’s Healthy Lifestyle</h2>
-            <p>Throughout your cat's life, he will have to adapt his physical activity according to his abilities and his age. To offer a healthy lifestyle and adequate physical activity to your cat, find out what reflexes to adopt to keep him in shape throughout his life.</p>
-            <p>🏃‍♀️🐈🏋️‍♂️</p>
-        </section>
-        
-        <section id="cat-grooming">
-            <h2>Cat Grooming</h2>
-            <p>Much regular care is important to keep your cat healthy. It is not always easy to clean your cat's ears or eyes, just like maintaining its fur or claws. Woopets gives you all his tips to help you apply the right grooming gestures.</p>
-            <p>💊🐈🏃‍♀️</p>
-        </section>
-        
-        <section id="cat-health-problems">
-            <h2>Cat Health Problems</h2>
-            <p>Discover the main health problems that your cat is likely to suffer from. It is important to recognize an illness by the symptoms, treat a disease, or how to get rid of parasites. Always consult your veterinarian before making any diagnosis.</p>
-            <p>🤒💊🏋️‍♂️</p>
-        </section>
 
-         <div class="slideshow-container">
-            <div class="slides">
-                <img src="images/catlive14.jpg" alt="Cat Image 1" style="width: 400px; height: 200px;">
-                <img src="images/catlive15.jpg" alt="Cat Image 2" style="width: 400px; height: 200px;">
-                <img src="images/catlive16.jpg" alt="Cat Image 3" style="width: 400px; height: 200px;">
-                
-            </div>
-            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-            <a class="next" onclick="moveSlide(1)">&#10095;</a>
-        </div>
+<div class="container">
+<h3>Contact us</h3>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <!-- Points de navigation -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            
-        </div>
-        
-    </main>
-    <footer>
-        <div class="activation-links">
-            <p> Useful links</p>
-            <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
-            <a href="https://www.instagram.com/catlive889/">Instagram</a>
-            <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
-        </div>
-        <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
-        <p>&copy; 2023 CatLive</p>
-    </footer>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-        function moveSlide(n) {
-            showSlides(slideIndex += n);
-        }
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-        function showSlides(n) {
-            let i;
-            const slides = document.querySelectorAll('.slides img');
-            const dots = document.querySelectorAll('.dot');
-            
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
+    <input type="submit" value="Submit">
+  </form>
+</div>
 
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
+<footer>
+    <div class="activation-links">
+        <p> Useful links</p>
+        <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
+        <a href="https://www.instagram.com/catlive889/">Instagram</a>
+        <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
+    </div>
+    <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
+    <p>&copy; 2023 CatLive</p>
+</footer>
 
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(' active', '');
-            }
-
-            slides[slideIndex - 1].style.display = 'block';
-            dots[slideIndex - 1].className += ' active';
-        }
-    </script>
 </body>
