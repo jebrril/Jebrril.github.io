@@ -207,50 +207,46 @@ r<head>
             <span class="dot" onclick="currentSlide(6)"></span>
             
         </div>
- <style>
+  <style>
     .error-message {
       color: red;
-      font-size: 0.8em;
-      margin-top: 5px;
     }
   </style>
   <script>
     function validateForm() {
       var email = document.getElementById("email").value;
       var message = document.getElementById("message").value;
-      var emailErrorMessage = document.getElementById("email-error");
-      var messageErrorMessage = document.getElementById("message-error");
-
-      // Reset previous error messages
-      emailErrorMessage.textContent = '';
-      messageErrorMessage.textContent = '';
+      var emailError = document.getElementById("email-error");
+      var messageError = document.getElementById("message-error");
 
       // Email and message validation
       if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
-        emailErrorMessage.textContent = "Please enter a valid email address.";
+        emailError.innerHTML = "Please enter a valid email address.";
         return false;
+      } else {
+        emailError.innerHTML = "";
       }
 
       var dotIndex = email.lastIndexOf('.');
       if (dotIndex < email.length - 1) {
         if (email.length - dotIndex <= 2) {
-          emailErrorMessage.textContent = "Please enter a valid email address.";
+          emailError.innerHTML = "Please enter a valid email address.";
           return false;
         }
-      } else {
-        emailErrorMessage.textContent = "Please enter a valid email address.";
-        return false;
       }
 
       if (message.length < 10) {
-        messageErrorMessage.textContent = "Your message should contain at least 10 characters.";
+        messageError.innerHTML = "Your message should contain at least 10 characters.";
         return false;
+      } else {
+        messageError.innerHTML = "";
       }
 
       // If validations pass, submit the form
       return true;
     }
-   <form
+  </script>
+  <form
     action="https://formspree.io/f/xpzvaqzr"
     method="POST"
     onsubmit="return validateForm()"
