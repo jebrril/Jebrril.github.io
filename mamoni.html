@@ -14,15 +14,17 @@ body {
 }
 
 header {
-  background-color: #222;
+  background-color: #ff0000; /* Rouge pour le header */
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-header h1 {
-  margin-bottom: 10px;
+/* Couleur verte pour les liens "Cours" */
+nav ul li:nth-child(2) a {
+  color: #00ff00;
 }
+
 .social-icons {
   list-style: none;
   padding: 0;
@@ -95,24 +97,6 @@ button {
 button:hover {
   background-color: #444;
 }
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f7f7f7;
-  color: #333;
-}
-
-header {
-  background-color: #ff0000; /* Rouge pour le header */
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Couleur verte pour les liens "Cours" */
-nav ul li:nth-child(2) a {
-  color: #00ff00;
-}
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,8 +115,6 @@ nav ul li:nth-child(2) a {
     </nav>
   </header>
 
- 
-
   <section id="localisation">
     <h2>Localisation</h2>
     <div id="map"></div>
@@ -142,48 +124,29 @@ nav ul li:nth-child(2) a {
   <section id="contact">
     <h2>Contactez-nous</h2>
     <form action="#">
-	
       <input type="text" placeholder="Nom">
       <input type="email" placeholder="Email">
       <textarea placeholder="Commentaire"></textarea>
       <button type="submit">Envoyer</button>
     </form>
-    <!-- Intégrer des liens vers les réseaux sociaux ici -->
+    <ul class="social-icons">
+      <li><a href="lien-vers-votre-page-facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="lien-vers-votre-page-instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="mailto:votre@email.com"><i class="far fa-envelope"></i></a></li>
+      <li><a href="tel:+123456789"><i class="fas fa-phone"></i></a></li>
+    </ul>
   </section>
 
   <footer>
-	<section id="contact">
-  <h2>Contactez-nous</h2>
-  <ul class="social-icons">
-    <li><a href="lien-vers-votre-page-facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
-    <li><a href="lien-vers-votre-page-instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
-    <li><a href="mailto:votre@email.com"><i class="far fa-envelope"></i></a></li>
-    <li><a href="tel:+123456789"><i class="fas fa-phone"></i></a></li>
-  </ul>
-  <form action="#">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Commentaire"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+    <div class="activation-links">
+      <p> Useful links</p>
+      <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
+      <a href="https://www.instagram.com/catlive889/">Instagram</a>
+      <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
+    </div>
+    <p>TEL +212 0666812087</p>
     <p>&copy; 2013 Auto-École mamouni</p>
   </footer>
 
   <script src="scripts.js"></script>
 </body>
-// Vous pouvez ajouter des fonctionnalités JavaScript ici, par exemple pour valider le formulaire ou intégrer une carte
-// Par exemple, pour intégrer une carte Google Maps :
-
-// function initMap() {
-//   const location = { lat: 48.8566, lng: 2.3522 }; // Coordonnées de Paris par exemple
-//   const map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 12,
-//     center: location,
-//   });
-//   const marker = new google.maps.Marker({
-//     position: location,
-//     map: map,
-//     title: 'Auto-École XYZ',
-//   });
-// }
