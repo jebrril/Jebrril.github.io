@@ -207,6 +207,26 @@
             <span class="dot" onclick="currentSlide(6)"></span>
             
         </div>
+      <script>
+    function validateForm() {
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // Checking email and message
+      if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      if (message.length < 10) {
+        alert("Your message should have at least 10 characters.");
+        return false;
+      }
+
+      // If validations pass, submit the form
+      return true;
+    }
+  </script>
    <form
   action="https://formspree.io/f/xpzvaqzr"
   method="POST"
