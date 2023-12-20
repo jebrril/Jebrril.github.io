@@ -207,19 +207,30 @@
             <span class="dot" onclick="currentSlide(6)"></span>
             
         </div>
-      <script>
+ <script>
     function validateForm() {
       var email = document.getElementById("email").value;
       var message = document.getElementById("message").value;
 
-      // Checking email and message
+      // Email and message validation
       if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
         alert("Please enter a valid email address.");
         return false;
       }
 
+      var dotIndex = email.lastIndexOf('.');
+      if (dotIndex < email.length - 1) {
+        if (email.length - dotIndex <= 2) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+      } else {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
       if (message.length < 10) {
-        alert("Your message should have at least 10 characters.");
+        alert("Your message should contain at least 10 characters.");
         return false;
       }
 
