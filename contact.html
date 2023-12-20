@@ -228,20 +228,21 @@
     }
   </script>
    <form
-  action="https://formspree.io/f/xpzvaqzr"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-   <input type="submit" value="Submit">
-</form>
+    action="https://formspree.io/f/xpzvaqzr"
+    method="POST"
+    onsubmit="return validateForm()"
+  >
+    <label>
+      Your email:
+      <input type="email" id="email" name="email">
+    </label>
+    <label>
+      Your message:
+      <textarea id="message" name="message"></textarea>
+    </label>
+    <!-- Your other form fields go here -->
+    <input type="submit" value="Submit">
+  </form>
 
     <footer>
         <div class="activation-links">
