@@ -1,4 +1,4 @@
-<head>
+r<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CatLive</title>
@@ -207,50 +207,64 @@
             <span class="dot" onclick="currentSlide(6)"></span>
             
         </div>
- <script>
+ <style>
+    .error-message {
+      color: red;
+      font-size: 0.8em;
+      margin-top: 5px;
+    }
+  </style>
+  <script>
     function validateForm() {
       var email = document.getElementById("email").value;
       var message = document.getElementById("message").value;
+      var emailErrorMessage = document.getElementById("email-error");
+      var messageErrorMessage = document.getElementById("message-error");
+
+      // Reset previous error messages
+      emailErrorMessage.textContent = '';
+      messageErrorMessage.textContent = '';
 
       // Email and message validation
       if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
-        alert("Please enter a valid email address.");
+        emailErrorMessage.textContent = "Please enter a valid email address.";
         return false;
       }
 
       var dotIndex = email.lastIndexOf('.');
       if (dotIndex < email.length - 1) {
         if (email.length - dotIndex <= 2) {
-          alert("Please enter a valid email address.");
+          emailErrorMessage.textContent = "Please enter a valid email address.";
           return false;
         }
       } else {
-        alert("Please enter a valid email address.");
+        emailErrorMessage.textContent = "Please enter a valid email address.";
         return false;
       }
 
       if (message.length < 10) {
-        alert("Your message should contain at least 10 characters.");
+        messageErrorMessage.textContent = "Your message should contain at least 10 characters.";
         return false;
       }
 
       // If validations pass, submit the form
       return true;
     }
-  </script>
    <form
     action="https://formspree.io/f/xpzvaqzr"
     method="POST"
     onsubmit="return validateForm()"
   >
-    <label>
-      Your email:
-      <input type="email" id="email" name="email">
-    </label>
-    <label>
-      Your message:
-      <textarea id="message" name="message"></textarea>
-    </label>
+    <div>
+      <label for="email">Your email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <span id="email-error" class="error-message"></span>
+    </div>
+    <div>
+      <label for="message">Your message:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      <span id="message-error" class="error-message"></span>
+    </div>
     <!-- Your other form fields go here -->
     <input type="submit" value="Submit">
   </form>
