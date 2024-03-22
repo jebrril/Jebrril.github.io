@@ -203,7 +203,68 @@
         justify-content: center;
         margin-top: 20px;
     }
+{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
     .star {
         color: #ffcc00;
         font-size: 24px;
@@ -276,73 +337,13 @@
           <span class="dot" onclick="currentSlide(2)"></span> 
           <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-    <main>
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>Welcome to "Catlive" your one-stop guide to the enchanting world of feline companions. Whether you're a passionate cat owner, considering adopting a cat, or just curious about these fascinating creatures, this document is designed to provide a comprehensive overview of all things cat-related.</p>
-        </section>
-
-        <section id="home">
-            <h2>Share Your Passion for Cats</h2>
-            <p>Discover the feline universe through Catlive Chat.</p>
-            <img src="images/catlive1.jpg" alt="Cat story" style="width: 650px;height: 490px;">
-           </section>
-
-        <section id="table-of-contents">
-            <h2>Table of Contents</h2>
-            <ul>
-                <li><a href="#history-of-cats">History of Cats</a></li>
-                <li><a href="#popular-cat-breeds">Popular Cat Breeds</a></li>
-                <li><a href="#cat-care-and-health">Cat Care and Health</a></li>
-                <li><a href="#behavior-and-communication">Behavior and Communication</a></li>
-                <li><a href="#feeding-and-nutrition">Feeding and Nutrition</a></li>
-                <li><a href="#training-and-enrichment">Training and Enrichment</a></li>
-                <li><a href="#fun-facts">Fun Facts</a></li>
-                <li><a href="#resources">Resources</a></li>
-            </ul>
-        </section>
-
-        <section id="History of Cats">
-            <h2>History of Cats</h2>
-            <img src="images/catlive2.jpg" alt="Cat story" style="width: 650px;height: 490px;">
-            <p>Explore the captivating history of cats, from their ancient origins to their roles in various cultures. Learn about their evolution alongside humans and the enduring bond between cats and people.</p>
-        </section>
-        
-   <section id="Popular Cat Breeds">
-            <h2>Popular Cat Breeds</h2>
-            <img src="images/catlive17.jpg" alt="Cat story"style="width: 650px;height: 490px;">
-            <p>Discover the diversity of cat breeds, each with its own unique characteristics, temperament, and charm. Whether you prefer the sleek Siamese, the regal Persian, or the playful Bengal, find the perfect match for your lifestyle!</p>
-        </section>
-
-        <section id="Cat Care and Health">
-            <h2>Cat Care and Health</h2>
-            <img src="images/catlive4.jpg" alt="Cat story"style="width: 650px;height: 490px;">
-            <p>Ensure the well-being of your feline companion with essential tips on cat care and health. From grooming and vaccinations to regular veterinary check-ups, this section covers everything you need to keep your cat happy and healthy.</p>
-        </section>
-
-        <section id="Behavior and Communication">
-            <h2>Behavior and Communication</h2>
-           <img src="images/catlive5.jpg" alt="Cat story"style="width: 650px;height: 490px;">
-            <p>Decode the language of cats by understanding their behavior and communication cues. Explore the meaning behind different meows, purrs, and body language, fostering a deeper connection with your furry friend.</p>
-        </section>
-
-        <section id="Feeding and Nutrition">
-            <h2>Feeding and Nutrition</h2>
-           <img src="images/catlive6.jpg" alt="Cat story"style="width: 650px;height: 490px;">
-            <p>Navigate the world of cat nutrition, from choosing the right cat food to understanding dietary requirements at different life stages. Learn about portion control, treats, and maintaining a balanced diet for optimal feline health.</p>
-        </section>
-
-        <section id="Training and Enrichment">
-            <h2>Training and Enrichment</h2>
-           <img src="images/catlive7.jpg" alt="Cat story"style="width: 650px;height: 490px;">
-            <p>Discover effective training techniques and enrichment activities to stimulate your cat's mind and body. Whether teaching basic commands or providing engaging toys, enhance the quality of life for both you and your feline companion.</p>
-        </section>
-
-        <section id="Fun Facts">
-            <h2>Fun Facts</h2>
-            <p>Uncover intriguing and entertaining facts about cats that showcase their unique qualities and behaviors. From ancient superstitions to modern-day trivia, these fun facts celebrate the quirks and charms of our beloved cats.</p>
-        </section>
-
+    <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description du produit 1.</p>
+        <p class="price">$50</p>
+        <button>Acheter</button>
+    </div>
         <section id="Resources">
     <h2>Resources</h2>
     <p>Explore additional resources for further information on cat care, behavior, and community:</p>
