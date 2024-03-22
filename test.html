@@ -1,421 +1,441 @@
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CatLive</title>
-<style>
-    function currentSlide(n) {
-    showSlides(slideIndex = n - 1);
-}
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>CatLive</title>
+          <style>
+                    function currentSlide(n) {
+                              showSlides(slideIndex=n - 1);
+                    }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n >= slides.length) {
-        slideIndex = 0;
-    }
-    if (n < 0) {
-        slideIndex = slides.length - 1;
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex].style.display = "block";
-    dots[slideIndex].className += " active";
-}
-    /* Réinitialisation des styles */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+                    function showSlides(n) {
+                              var i;
+                              var slides=document.getElementsByClassName("mySlides");
+                              var dots=document.getElementsByClassName("dot");
 
-    /* Styles généraux */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f5f5f5;
-        color: #333;
-    }
+                              if (n >=slides.length) {
+                                        slideIndex=0;
+                              }
 
-    header {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-    }
+                              if (n < 0) {
+                                        slideIndex=slides.length - 1;
+                              }
 
-    header h1 {
-        background-color: #fff;
-        color: #663399;
-        padding: 10px;
-        border-radius: 5px;
-        display: inline-block;
-        margin-right: 20px;
-    }
+                              for (i=0; i < slides.length; i++) {
+                                        slides[i].style.display="none";
+                              }
 
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        text-align: center;
-        margin: 0;
-        margin-top: 20px;
-    }
+                              for (i=0; i < dots.length; i++) {
+                                        dots[i].className=dots[i].className.replace(" active", "");
+                              }
 
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-        margin-bottom: 10px;
-    }
+                              slides[slideIndex].style.display="block";
+                              dots[slideIndex].className+=" active";
+                    }
 
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-    }
+                    /* Réinitialisation des styles */
+                    * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                    }
 
-    main {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+                    /* Styles généraux */
+                    body {
+                              font-family: Arial, sans-serif;
+                              margin: 0;
+                              padding: 0;
+                              background-color: #f5f5f5;
+                              color: #333;
+                    }
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-    }
+                    header {
+                              background-color: #333;
+                              color: #fff;
+                              text-align: center;
+                              padding: 20px;
+                    }
 
-    .product {
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-    }
+                    header h1 {
+                              background-color: #fff;
+                              color: #663399;
+                              padding: 10px;
+                              border-radius: 5px;
+                              display: inline-block;
+                              margin-right: 20px;
+                    }
 
-    .product img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: cover;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
+                    nav ul {
+                              list-style-type: none;
+                              padding: 0;
+                              text-align: center;
+                              margin: 0;
+                              margin-top: 20px;
+                    }
 
-    .product h2 {
-        color: #333;
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
+                    nav ul li {
+                              display: inline;
+                              margin-right: 20px;
+                              margin-bottom: 10px;
+                    }
 
-    .product p {
-        color: #666;
-        margin-bottom: 15px;
-    }
+                    nav ul li a {
+                              text-decoration: none;
+                              color: #fff;
+                              font-weight: bold;
+                    }
 
-    .price {
-        font-size: 24px;
-        color: #ff4500;
-        margin-bottom: 10px;
-    }
+                    main {
+                              padding: 20px;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                    }
 
-    button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+                    .container {
+                              display: grid;
+                              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                              gap: 20px;
+                              max-width: 1200px;
+                              margin: 20px auto;
+                              padding: 20px;
+                    }
 
-    button:hover {
-        background-color: #0056b3;
-    }
+                    .product {
+                              background-color: #fff;
+                              border-radius: 5px;
+                              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                              padding: 20px;
+                              text-align: center;
+                    }
 
-    .star {
-        color: #ffcc00;
-        font-size: 24px;
-        margin: 0 2px;
-    }
+                    .product img {
+                              width: 100%;
+                              max-height: 200px;
+                              object-fit: cover;
+                              border-radius: 5px;
+                              margin-bottom: 10px;
+                    }
 
-    .logo {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        z-index: 9999;
-    }
+                    .product h2 {
+                              color: #333;
+                              font-size: 20px;
+                              margin-bottom: 10px;
+                    }
 
-    /* Ajustements de style pour le logo */
-    .logo img {
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-        border: 3px solid #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+                    .product p {
+                              color: #666;
+                              margin-bottom: 15px;
+                    }
 
-    .container {
-        max-width: 1000px;
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-    }
+                    .price {
+                              font-size: 24px;
+                              color: #ff4500;
+                              margin-bottom: 10px;
+                    }
 
-    .product-slider {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-    }
+                    button {
+                              background-color: #007bff;
+                              color: #fff;
+                              border: none;
+                              padding: 10px 20px;
+                              border-radius: 5px;
+                              cursor: pointer;
+                              transition: background-color 0.3s ease;
+                    }
 
-    .slide {
-        flex: 0 0 auto;
-        width: 100%;
-    }
+                    button:hover {
+                              background-color: #0056b3;
+                    }
 
-    .slide img {
-        width: 100%;
-        height: auto;
-    }
+                    .star {
+                              color: #ffcc00;
+                              font-size: 24px;
+                              margin: 0 2px;
+                    }
 
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        font-size: 20px;
-    }
+                    .logo {
+                              position: absolute;
+                              top: 20px;
+                              left: 20px;
+                              z-index: 9999;
+                    }
 
-    .prev {
-        left: 0;
-    }
+                    /* Ajustements de style pour le logo */
+                    .logo img {
+                              width: 150px;
+                              height: auto;
+                              border-radius: 50%;
+                              border: 3px solid #fff;
+                              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
 
-    .next {
-        right: 0;
-    }
-* {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-.dot {
-    height: 15px;
-    width: 15px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
-    cursor: pointer;
-}
+                    .container {
+                              max-width: 1000px;
+                              margin: auto;
+                              overflow: hidden;
+                              position: relative;
+                    }
 
-.dot.active {
-    background-color: #717171;
-}
+                    .product-slider {
+                              display: flex;
+                              transition: transform 0.5s ease-in-out;
+                    }
 
-.review-bar {
-    margin-top: 20px;
-    text-align: center;
-}
+                    .slide {
+                              flex: 0 0 auto;
+                              width: 100%;
+                    }
 
-.star {
-    color: #ffcc00;
-    font-size: 24px;
-    margin: 0 2px;
-}
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        color: #333;
-    }
+                    .slide img {
+                              width: 100%;
+                              height: auto;
+                    }
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        max-width: 1200px;
-        margin: 20px auto;
-        padding: 20px;
-        overflow: hidden;
-        position: relative;
-    }
+                    .prev,
+                    .next {
+                              position: absolute;
+                              top: 50%;
+                              transform: translateY(-50%);
+                              background-color: rgba(0, 0, 0, 0.5);
+                              color: #fff;
+                              border: none;
+                              cursor: pointer;
+                              padding: 10px;
+                              font-size: 20px;
+                    }
 
-    .product-slider {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-    }
+                    .prev {
+                              left: 0;
+                    }
 
-    .slide {
-        flex: 0 0 auto;
-        width: 100%;
-    }
+                    .next {
+                              right: 0;
+                    }
 
-    .slide img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: cover;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
+                    * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                    }
 
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        font-size: 20px;
-    }
+                    .dot {
+                              height: 15px;
+                              width: 15px;
+                              background-color: #bbb;
+                              border-radius: 50%;
+                              display: inline-block;
+                              margin: 0 5px;
+                              cursor: pointer;
+                    }
 
-    .prev {
-        left: 0;
-    }
+                    .dot.active {
+                              background-color: #717171;
+                    }
 
-    .next {
-        right: 0;
-    }
-</style>
+                    .review-bar {
+                              margin-top: 20px;
+                              text-align: center;
+                    }
+
+                    .star {
+                              color: #ffcc00;
+                              font-size: 24px;
+                              margin: 0 2px;
+                    }
+
+                    body {
+                              font-family: Arial, sans-serif;
+                              background-color: #f5f5f5;
+                              color: #333;
+                    }
+
+                    .container {
+                              display: grid;
+                              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                              gap: 20px;
+                              max-width: 1200px;
+                              margin: 20px auto;
+                              padding: 20px;
+                              overflow: hidden;
+                              position: relative;
+                    }
+
+                    .product-slider {
+                              display: flex;
+                              transition: transform 0.5s ease-in-out;
+                    }
+
+                    .slide {
+                              flex: 0 0 auto;
+                              width: 100%;
+                    }
+
+                    .slide img {
+                              width: 100%;
+                              max-height: 200px;
+                              object-fit: cover;
+                              border-radius: 5px;
+                              margin-bottom: 10px;
+                    }
+
+                    .prev,
+                    .next {
+                              position: absolute;
+                              top: 50%;
+                              transform: translateY(-50%);
+                              background-color: rgba(0, 0, 0, 0.5);
+                              color: #fff;
+                              border: none;
+                              cursor: pointer;
+                              padding: 10px;
+                              font-size: 20px;
+                    }
+
+                    .prev {
+                              left: 0;
+                    }
+
+                    .next {
+                              right: 0;
+                    }
+          </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/catlive18.jpg" alt="CatLive Logo">
-        </div>
-        <h1>🐱vent with CATLIVE🐱</h1>
-        <nav>
-            <ul>
-                <li><a href="catlive.html">Home</a></li>
-                <li><a href="adoption.html">Adoption</a></li>
-                <li><a href="food.html">Food</a></li>
-                <li><a href="health.html">Health</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="everyday_life.html">Everyday Life</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="images/catlive17.jpg" alt="Slide 1">
-    </div>
-    <div class="mySlides fade">
-      <img src="images/catlive8.jpg" alt="Slide 2">
-    </div>
-    <div class="mySlides fade">
-      <img src="images/catlive12.jpg" alt="Slide 3">
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-
-<div class="container">
-    <div class="product-slider">
-        <div class="slide">
-            <img src="product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>Description du produit 1.</p>
-            <p class="price">$50</p>
-            <button>Acheter</button>
-        </div>
-        <div class="slide">
-            <img src="product2.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>Description du produit 2.</p>
-            <p class="price">$60</p>
-            <button>Acheter</button>
-        </div>
-        <div class="slide">
-            <img src="product3.jpg" alt="Product 3">
-            <h2>Product 3</h2>
-            <p>Description du produit 3.</p>
-            <p class="price">$70</p>
-            <button>Acheter</button>
-        </div>
-        <div class="slide">
-            <img src="product4.jpg" alt="Product 4">
-            <h2>Product 4</h2>
-            <p>Description du produit 4.</p>
-            <p class="price">$80</p>
-            <button>Acheter</button>
-        </div>
-        <div class="slide">
-            <img src="product5.jpg" alt="Product 5">
-            <h2>Product 5</h2>
-            <p>Description du produit 5.</p>
-            <p class="price">$90</p>
-            <button>Acheter</button>
-        </div>
-        <div class="slide">
-            <img src="product6.jpg" alt="Product 6">
-            <h2>Product 6</h2>
-            <p>Description du produit 6.</p>
-            <p class="price">$100</p>
-            <button>Acheter</button>
-        </div></div>
-    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-    <a class="next" onclick="moveSlide(1)">&#10095;</a>
-</div>
-    </div>
-</div>
-    
-      <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-
-  </div> class="review-bar">
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-        </div>
-   <footer>
-        <div class="activation-links">
-            <p> Useful links</p>
-            <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
-            <a href="https://www.instagram.com/catlive889/">Instagram</a>
-            <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
-        </div>
-        <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
-        <p>&copy; 2024 CatLive</p>
-    </footer>
-<script>
-      // Déclaration des variables globales
-let slideIndex = 0;
-const slides = document.querySelectorAll('.mySlides');
-const totalSlides = slides.length;
-const containerWidth = document.querySelector('.container').offsetWidth;
-const slider = document.querySelector('.product-slider');
-
-// Fonction pour déplacer les slides
-function moveSlide(n) {
-    slideIndex += n;
-    if (slideIndex >= totalSlides) {
-        slideIndex = 0;
-    } else if (slideIndex < 0) {
-        slideIndex = totalSlides - 1;
-    }
-    slider.style.transform = `translateX(-${slideIndex * containerWidth}px)`;
-}
-
-// Défilement automatique toutes les 3 secondes
-setInterval(() => {
-    moveSlide(1);
-}, 3000);
-    </script>
-        </body>
+          <header>
+                    <div class="logo">
+                              <img src="images/catlive18.jpg" alt="CatLive Logo">
+                    </div>
+                    <h1>🐱vent with CATLIVE🐱</h1>
+                    <nav>
+                              <ul>
+                                        <li>
+                                                  <a href="catlive.html">Home</a>
+                                        </li>
+                                        <li>
+                                                  <a href="adoption.html">Adoption</a>
+                                        </li>
+                                        <li>
+                                                  <a href="food.html">Food</a>
+                                        </li>
+                                        <li>
+                                                  <a href="health.html">Health</a>
+                                        </li>
+                                        <li>
+                                                  <a href="education.html">Education</a>
+                                        </li>
+                                        <li>
+                                                  <a href="everyday_life.html">Everyday Life</a>
+                                        </li>
+                                        <li>
+                                                  <a href="contact.html">Contact Us</a>
+                                        </li>
+                              </ul>
+                    </nav>
+          </header>
+          <div class="slideshow-container">
+                    <div class="mySlides fade">
+                              <img src="images/catlive17.jpg" alt="Slide 1">
+                    </div>
+                    <div class="mySlides fade">
+                              <img src="images/catlive8.jpg" alt="Slide 2">
+                    </div>
+                    <div class="mySlides fade">
+                              <img src="images/catlive12.jpg" alt="Slide 3">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div class="container">
+                    <div class="product-slider">
+                              <div class="slide">
+                                        <img src="product1.jpg" alt="Product 1">
+                                        <h2>Product 1</h2>
+                                        <p>Description du produit 1.</p>
+                                        <p class="price">$50</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product2.jpg" alt="Product 2">
+                                        <h2>Product 2</h2>
+                                        <p>Description du produit 2.</p>
+                                        <p class="price">$60</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product3.jpg" alt="Product 3">
+                                        <h2>Product 3</h2>
+                                        <p>Description du produit 3.</p>
+                                        <p class="price">$70</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product4.jpg" alt="Product 4">
+                                        <h2>Product 4</h2>
+                                        <p>Description du produit 4.</p>
+                                        <p class="price">$80</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product5.jpg" alt="Product 5">
+                                        <h2>Product 5</h2>
+                                        <p>Description du produit 5.</p>
+                                        <p class="price">$90</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product6.jpg" alt="Product 6">
+                                        <h2>Product 6</h2>
+                                        <p>Description du produit 6.</p>
+                                        <p class="price">$100</p>
+                                        <button>Acheter</button>
+                              </div>
+                    </div>
+                    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+          </div>
+          </div>
+          </div>
+          <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          </div> class="review-bar"> <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          <span class="star">&#9733;</span>
+          </div>
+          <footer>
+                    <div class="activation-links">
+                              <p> Useful links</p>
+                              <a href="https://www.facebook.com/people/Cat-Ferlive/pfbid0BdmEDU352LKqiFBYQrW5zzyQsF18MJd2dpREAuuG2qNqA2HmZxmCKz5887y6x82Rl/">Facebook</a>
+                              <a href="https://www.instagram.com/catlive889/">Instagram</a>
+                              <a href="https://www.youtube.com/@josef-jebril">Youtube</a>
+                    </div>
+                    <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
+                    <p>&copy; 2024 CatLive</p>
+          </footer>
+          <script>
+                    // Déclaration des variables globales
+                    let slideIndex = 0;
+                    const slides = document.querySelectorAll('.mySlides');
+                    const totalSlides = slides.length;
+                    const containerWidth = document.querySelector('.container').offsetWidth;
+                    const slider = document.querySelector('.product-slider');
+                    // Fonction pour déplacer les slides
+                    function moveSlide(n) {
+                              slideIndex += n;
+                              if (slideIndex >= totalSlides) {
+                                        slideIndex = 0;
+                              } else if (slideIndex < 0) {
+                                        slideIndex = totalSlides - 1;
+                              }
+                              slider.style.transform = `translateX(-${slideIndex * containerWidth}px)`;
+                    }
+                    // Défilement automatique toutes les 3 secondes
+                    setInterval(() => {
+                              moveSlide(1);
+                    }, 3000);
+          </script>
+</body>
