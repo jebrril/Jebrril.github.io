@@ -5,8 +5,7 @@
           <style>
                     function currentSlide(n) {
                               showSlides(slideIndex=n - 1);
-                    }
-
+                    } 
                     function showSlides(n) {
                               var i;
                               var slides=document.getElementsByClassName("mySlides");
@@ -179,22 +178,20 @@
                     .product-slider {
                               display: flex;
                               transition: transform 0.5s ease-in-out;
-                    }
+                    }* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-                    * {
-                              margin: 0;
-                              padding: 0;
-                              box-sizing: border-box;
-                    }
-
-                    /* Styles généraux */
-                    body {
-                              font-family: Arial, sans-serif;
-                              margin: 0;
-                              padding: 0;
-                              background-color: #f5f5f5;
-                              color: #333;
-                    }
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
 
                     .slide {
                               flex: 0 0 auto;
@@ -205,41 +202,38 @@
                               width: 100%;
                               height: auto;
                     }
+                     footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
 
-                    footer {
-                              background-color: #333;
-                              color: #fff;
-                              padding: 10px;
-                              text-align: center;
-                    }
+        .activation-links a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
 
-                    .activation-links a {
-                              margin: 0 10px;
-                              color: #fff;
-                              text-decoration: none;
-                              font-size: 24px;
-                    }
+        .activation-links a:hover {
+            color: #ffcc00;
+        }
 
-                    .activation-links a:hover {
-                              color: #ffcc00;
-                    }
+        .review-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+/* Ajout d'espace entre les produits */
+.product-slider .slide {
+    margin-right: 20px; /* Espace à droite de chaque produit */
+}
 
-                    .review-bar {
-                              display: flex;
-                              justify-content: center;
-                              margin-top: 20px;
-                    }
-
-                    /* Ajout d'espace entre les produits */
-                    .product-slider .slide {
-                              margin-right: 20px;
-                              /* Espace à droite de chaque produit */
-                    }
-
-                    /* Pour le dernier produit dans chaque slider, supprimez la marge droite pour éviter un espace excessif */
-                    .product-slider .slide:last-child {
-                              margin-right: 0;
-                    }
+/* Pour le dernier produit dans chaque slider, supprimez la marge droite pour éviter un espace excessif */
+.product-slider .slide:last-child {
+    margin-right: 0;
+}
 
                     .prev,
                     .next {
@@ -348,136 +342,155 @@
                     .next {
                               right: 0;
                     }
+                       .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .product-slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+        flex: 0 0 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-decoration: none;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-                    .container {
-                              width: 80%;
-                              margin: 0 auto;
-                              overflow: hidden;
-                              position: relative;
-                    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
 
-                    .product-slider {
-                              display: flex;
-                              transition: transform 0.5s ease-in-out;
-                    }
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
 
-                    .slide {
-                              flex: 0 0 100%;
-                              text-align: center;
-                              padding: 20px;
-                    }
+.product-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
-                    .prev,
-                    .next {
-                              position: absolute;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              cursor: pointer;
-                              padding: 10px;
-                              background-color: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              text-decoration: none;
-                    }
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+}
 
-                    .prev {
-                              left: 0;
-                    }
+.slide img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 
-                    .next {
-                              right: 0;
-                    }
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+}
 
-                    * {
-                              margin: 0;
-                              padding: 0;
-                              box-sizing: border-box;
-                    }
+.prev {
+    left: 0;
+}
 
-                    body {
-                              font-family: Arial, sans-serif;
-                              background-color: #f5f5f5;
-                              color: #333;
-                    }
+.next {
+    right: 0;
+}
 
-                    .container {
-                              display: grid;
-                              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                              gap: 20px;
-                              max-width: 1200px;
-                              margin: 20px auto;
-                              padding: 20px;
-                              overflow: hidden;
-                              position: relative;
-                    }
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
 
-                    .product-slider {
-                              display: flex;
-                              transition: transform 0.5s ease-in-out;
-                    }
+.activation-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
 
-                    .slide {
-                              flex: 0 0 100%;
-                              text-align: center;
-                              padding: 20px;
-                    }
+.activation-links a:hover {
+    color: #ffcc00;
+}
+slide {
+    flex: 0 0 calc(33.33% - 20px); /* Utilisation de calc pour calculer la largeur avec espace */
+    margin: 10px; /* Ajout de marge autour des produits */
+    text-align: center;
+    padding: 20px;
+}
 
-                    .slide img {
-                              width: 100%;
-                              max-height: 200px;
-                              object-fit: cover;
-                              border-radius: 5px;
-                              margin-bottom: 10px;
-                    }
+.review-bar {
+    margin-top: 20px;
+    text-align: center;
+}
+.container {
+        position: relative;
+    }
 
-                    .prev,
-                    .next {
-                              position: absolute;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              cursor: pointer;
-                              padding: 10px;
-                              background-color: rgba(0, 0, 0, 0.5);
-                              color: white;
-                              text-decoration: none;
-                    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-decoration: none;
+    }
 
-                    .prev {
-                              left: 0;
-                    }
+    .prev:before {
+        content: "prev";
+    }
 
-                    .next {
-                              right: 0;
-                    }
-
-                    /* Footer Styles */
-                    footer {
-                              background-color: #333;
-                              color: #fff;
-                              padding: 10px;
-                              text-align: center;
-                    }
-
-                    .activation-links a {
-                              margin: 0 10px;
-                              color: #fff;
-                              text-decoration: none;
-                              font-size: 24px;
-                    }
-
-                    .activation-links a:hover {
-                              color: #ffcc00;
-                    }
-
-                    .review-bar {
-                              margin-top: 20px;
-                              text-align: center;
-                    }
-
-                    .star {
-                              color: #ffcc00;
-                              font-size: 24px;
-                              margin: 0 2px;
-                    }
+    .next:before {
+        content: "next";
+    }
+.star {
+    color: #ffcc00;
+    font-size: 24px;
+    margin: 0 2px;
+}
           </style>
 </head>
 <body>
@@ -513,7 +526,7 @@
                     </nav>
           </header>
           <div class="container">
-                    <div class="product-slider" id="slider1">
+    <div class="product-slider" id="slider1">
                               <div class="slide">
                                         <img src="product1.jpg" alt="Product 1">
                                         <h2>Product 1</h2>
@@ -557,11 +570,108 @@
                                         <button>Acheter</button>
                               </div>
                     </div>
-                    <a class="prev" onclick="moveSlide('slider1', -1)">&#10094;</a>
-                    <a class="next" onclick="moveSlide('slider1', 1)">&#10095;</a>
-          </div>
+    <a class="prev" onclick="moveSlide('slider1', -1)">&#10094;</a>
+    <a class="next" onclick="moveSlide('slider1', 1)">&#10095;</a>
+</div>
+
+         <div class="container">
+    <div class="product-slider" id="slider2">
+                              <div class="slide">
+                                        <img src="product1.jpg" alt="Product 1">
+                                        <h2>Product 1</h2>
+                                        <p>Description du produit 1.</p>
+                                        <p class="price">$50</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product2.jpg" alt="Product 2">
+                                        <h2>Product 2</h2>
+                                        <p>Description du produit 2.</p>
+                                        <p class="price">$60</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product3.jpg" alt="Product 3">
+                                        <h2>Product 3</h2>
+                                        <p>Description du produit 3.</p>
+                                        <p class="price">$70</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product4.jpg" alt="Product 4">
+                                        <h2>Product 4</h2>
+                                        <p>Description du produit 4.</p>
+                                        <p class="price">$80</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product5.jpg" alt="Product 5">
+                                        <h2>Product 5</h2>
+                                        <p>Description du produit 5.</p>
+                                        <p class="price">$90</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product6.jpg" alt="Product 6">
+                                        <h2>Product 6</h2>
+                                        <p>Description du produit 6.</p>
+                                        <p class="price">$100</p>
+                                        <button>Acheter</button>
+                              </div>
+                   </div>
+    <a class="prev" onclick="moveSlide('slider2', -1)">&#10094;</a>
+    <a class="next" onclick="moveSlide('slider2', 1)">&#10095;</a>
+</div>
+ <div class="container">
+    <div class="product-slider" id="slider3">
+                              <div class="slide">
+                                        <img src="product1.jpg" alt="Product 1">
+                                        <h2>Product 1</h2>
+                                        <p>Description du produit 1.</p>
+                                        <p class="price">$50</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product2.jpg" alt="Product 2">
+                                        <h2>Product 2</h2>
+                                        <p>Description du produit 2.</p>
+                                        <p class="price">$60</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product3.jpg" alt="Product 3">
+                                        <h2>Product 3</h2>
+                                        <p>Description du produit 3.</p>
+                                        <p class="price">$70</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product4.jpg" alt="Product 4">
+                                        <h2>Product 4</h2>
+                                        <p>Description du produit 4.</p>
+                                        <p class="price">$80</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product5.jpg" alt="Product 5">
+                                        <h2>Product 5</h2>
+                                        <p>Description du produit 5.</p>
+                                        <p class="price">$90</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product6.jpg" alt="Product 6">
+                                        <h2>Product 6</h2>
+                                        <p>Description du produit 6.</p>
+                                        <p class="price">$100</p>
+                                        <button>Acheter</button>
+                              </div>
+                     </div>
+        <a class="prev" onclick="moveSlide('slider3', -1)">&#10094;</a>
+        <a class="next" onclick="moveSlide('slider3', 1)">&#10095;</a>
+    </div>
           <div class="container">
-                    <div class="product-slider" id="slider2">
+    <div class="product-slider" id="slider4">
                               <div class="slide">
                                         <img src="product1.jpg" alt="Product 1">
                                         <h2>Product 1</h2>
@@ -605,105 +715,10 @@
                                         <button>Acheter</button>
                               </div>
                     </div>
-                    <a class="prev" onclick="moveSlide('slider2', -1)">&#10094;</a>
-                    <a class="next" onclick="moveSlide('slider2', 1)">&#10095;</a>
-          </div>
-          <div class="container">
-                    <div class="product-slider" id="slider3">
-                              <div class="slide">
-                                        <img src="product1.jpg" alt="Product 1">
-                                        <h2>Product 1</h2>
-                                        <p>Description du produit 1.</p>
-                                        <p class="price">$50</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product2.jpg" alt="Product 2">
-                                        <h2>Product 2</h2>
-                                        <p>Description du produit 2.</p>
-                                        <p class="price">$60</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product3.jpg" alt="Product 3">
-                                        <h2>Product 3</h2>
-                                        <p>Description du produit 3.</p>
-                                        <p class="price">$70</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product4.jpg" alt="Product 4">
-                                        <h2>Product 4</h2>
-                                        <p>Description du produit 4.</p>
-                                        <p class="price">$80</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product5.jpg" alt="Product 5">
-                                        <h2>Product 5</h2>
-                                        <p>Description du produit 5.</p>
-                                        <p class="price">$90</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product6.jpg" alt="Product 6">
-                                        <h2>Product 6</h2>
-                                        <p>Description du produit 6.</p>
-                                        <p class="price">$100</p>
-                                        <button>Acheter</button>
-                              </div>
-                    </div>
-                    <a class="prev" onclick="moveSlide('slider3', -1)">&#10094;</a>
-                    <a class="next" onclick="moveSlide('slider3', 1)">&#10095;</a>
-          </div>
-          <div class="container">
-                    <div class="product-slider" id="slider4">
-                              <div class="slide">
-                                        <img src="product1.jpg" alt="Product 1">
-                                        <h2>Product 1</h2>
-                                        <p>Description du produit 1.</p>
-                                        <p class="price">$50</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product2.jpg" alt="Product 2">
-                                        <h2>Product 2</h2>
-                                        <p>Description du produit 2.</p>
-                                        <p class="price">$60</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product3.jpg" alt="Product 3">
-                                        <h2>Product 3</h2>
-                                        <p>Description du produit 3.</p>
-                                        <p class="price">$70</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product4.jpg" alt="Product 4">
-                                        <h2>Product 4</h2>
-                                        <p>Description du produit 4.</p>
-                                        <p class="price">$80</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product5.jpg" alt="Product 5">
-                                        <h2>Product 5</h2>
-                                        <p>Description du produit 5.</p>
-                                        <p class="price">$90</p>
-                                        <button>Acheter</button>
-                              </div>
-                              <div class="slide">
-                                        <img src="product6.jpg" alt="Product 6">
-                                        <h2>Product 6</h2>
-                                        <p>Description du produit 6.</p>
-                                        <p class="price">$100</p>
-                                        <button>Acheter</button>
-                              </div>
-                    </div>
-                    <a class="prev" onclick="moveSlide('slider4', -1)">&#10094;</a>
-                    <a class="next" onclick="moveSlide('slider4', 1)">&#10095;</a>
-          </div>
+    <a class="prev" onclick="moveSlide('slider4', -1)">&#10094;</a>
+    <a class="next" onclick="moveSlide('slider4', 1)">&#10095;</a>
+</div>
+
           <footer>
                     <div class="activation-links">
                               <p> Useful links</p>
@@ -714,48 +729,51 @@
                     <p>TEL +212 0666812087 +212 0687004842 ---🐱--- catlive889@gmail.com</p>
                     <p>&copy; 2024 CatLive</p>
           </footer>
-          <script>
-                    // Déclaration des variables globales
-                    const containerWidth = document.querySelector('.container').offsetWidth;
-                    // Fonction pour déplacer les slides d'un diaporama spécifique
-                    function moveSlide(sliderId, n) {
-                              const slider = document.getElementById(sliderId);
-                              let slideIndex = parseInt(slider.dataset.slideIndex) || 0;
-                              const totalSlides = slider.querySelectorAll('.slide').length;
-                              slideIndex += n;
-                              if (slideIndex >= totalSlides) {
-                                        slideIndex = 0;
-                              } else if (slideIndex < 0) {
-                                        slideIndex = totalSlides - 1;
-                              }
-                              slider.dataset.slideIndex = slideIndex;
-                              slider.style.transform = `translateX(-${slideIndex * containerWidth}px)`;
-                    }
-                    // Défilement automatique pour chaque diaporama toutes les 3 secondes
-                    const sliders = document.querySelectorAll('.product-slider');
-                    sliders.forEach(slider => {
-                              setInterval(() => {
-                                        moveSlide(slider.id, 1);
-                              }, 3000);
-                    });
-          </script>
-          <script>
-                    // JavaScript for moving slides in each slider
-                    function moveSlide(sliderId, n) {
-                              const slider = document.getElementById(sliderId);
-                              const slides = slider.querySelectorAll('.slide');
-                              const containerWidth = slider.offsetWidth;
-                              const currentSlideIndex = Array.from(slides).findIndex(slide => slide.style.transform === 'translateX(0px)') || 0;
-                              let newIndex = currentSlideIndex + n;
-                              if (newIndex >= slides.length) {
-                                        newIndex = 0;
-                              } else if (newIndex < 0) {
-                                        newIndex = slides.length - 1;
-                              }
-                              slides.forEach(slide => {
-                                        slide.style.transform = `translateX(-${newIndex * containerWidth}px)`;
-                              });
-                    }
-          </script>
+<script>
+   // Déclaration des variables globales
+const sliders = document.querySelectorAll('.product-slider');
 
+// Fonction pour déplacer les slides d'un diaporama spécifique
+function moveSlide(slider, n) {
+    const slides = slider.querySelectorAll('.slide');
+    const containerWidth = slider.offsetWidth;
+    let slideIndex = parseInt(slider.dataset.slideIndex) || 0;
+    const totalSlides = slides.length;
+
+    slideIndex += n;
+    if (slideIndex >= totalSlides) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = totalSlides - 1;
+    }
+
+    slides.forEach(slide => {
+        slide.style.transform = `translateX(-${slideIndex * containerWidth}px)`;
+    });
+
+    slider.dataset.slideIndex = slideIndex;
+}
+
+// Défilement automatique pour chaque diaporama toutes les 3 secondes
+sliders.forEach(slider => {
+    setInterval(() => {
+        moveSlide(slider, 1);
+    }, 3000);
+});
+
+// Événements pour les boutons de navigation
+document.querySelectorAll('.prev').forEach(prevBtn => {
+    prevBtn.addEventListener('click', () => {
+        const sliderId = prevBtn.parentElement.querySelector('.product-slider').id;
+        moveSlide(document.getElementById(sliderId), -1);
+    });
+});
+
+document.querySelectorAll('.next').forEach(nextBtn => {
+    nextBtn.addEventListener('click', () => {
+        const sliderId = nextBtn.parentElement.querySelector('.product-slider').id;
+        moveSlide(document.getElementById(sliderId), 1);
+    });
+});
+ </script> 
           </body>
