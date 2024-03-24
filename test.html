@@ -181,6 +181,21 @@
                               transition: transform 0.5s ease-in-out;
                     }
 
+                    * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                    }
+
+                    /* Styles généraux */
+                    body {
+                              font-family: Arial, sans-serif;
+                              margin: 0;
+                              padding: 0;
+                              background-color: #f5f5f5;
+                              color: #333;
+                    }
+
                     .slide {
                               flex: 0 0 auto;
                               width: 100%;
@@ -356,207 +371,198 @@
                               </ul>
                     </nav>
           </header>
-          <div class="slideshow-container">
-                    <div class="mySlides fade">
-                              <img src="images/catlive17.jpg" alt="Slide 1">
-                    </div>
-                    <div class="mySlides fade">
-                              <img src="images/catlive8.jpg" alt="Slide 2">
-                    </div>
-                    <div class="mySlides fade">
-                              <img src="images/catlive12.jpg" alt="Slide 3">
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
           <div class="container">
-                    <div class="product-slider">
+                    <div class="product-slider" id="slider1">
                               <div class="slide">
-                                        <img src="catlive17.jpg" alt="Product 1">
+                                        <img src="product1.jpg" alt="Product 1">
                                         <h2>Product 1</h2>
                                         <p>Description du produit 1.</p>
                                         <p class="price">$50</p>
                                         <button>Acheter</button>
                               </div>
                               <div class="slide">
-                                        <img src="catlive16.jpg" alt="Product 2">
+                                        <img src="product2.jpg" alt="Product 2">
                                         <h2>Product 2</h2>
                                         <p>Description du produit 2.</p>
                                         <p class="price">$60</p>
                                         <button>Acheter</button>
                               </div>
                               <div class="slide">
-                                        <img src="catlive7.jpg" alt="Product 3">
+                                        <img src="product3.jpg" alt="Product 3">
                                         <h2>Product 3</h2>
                                         <p>Description du produit 3.</p>
                                         <p class="price">$70</p>
                                         <button>Acheter</button>
                               </div>
                               <div class="slide">
-                                        <img src="catlive6.jpg" alt="Product 4">
+                                        <img src="product4.jpg" alt="Product 4">
                                         <h2>Product 4</h2>
                                         <p>Description du produit 4.</p>
                                         <p class="price">$80</p>
                                         <button>Acheter</button>
                               </div>
                               <div class="slide">
-                                        <img src="catlive10.jpg" alt="Product 5">
+                                        <img src="product5.jpg" alt="Product 5">
                                         <h2>Product 5</h2>
                                         <p>Description du produit 5.</p>
                                         <p class="price">$90</p>
                                         <button>Acheter</button>
                               </div>
                               <div class="slide">
-                                        <img src="catlive9.jpg" alt="Product 6">
+                                        <img src="product6.jpg" alt="Product 6">
                                         <h2>Product 6</h2>
                                         <p>Description du produit 6.</p>
                                         <p class="price">$100</p>
                                         <button>Acheter</button>
                               </div>
                     </div>
-                    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-                    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                    <a class="prev" onclick="moveSlide('slider1', -1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide('slider1', 1)">&#10095;</a>
           </div>
+          <div class="container">
+                    <div class="product-slider" id="slider2">
+                              <div class="slide">
+                                        <img src="product1.jpg" alt="Product 1">
+                                        <h2>Product 1</h2>
+                                        <p>Description du produit 1.</p>
+                                        <p class="price">$50</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product2.jpg" alt="Product 2">
+                                        <h2>Product 2</h2>
+                                        <p>Description du produit 2.</p>
+                                        <p class="price">$60</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product3.jpg" alt="Product 3">
+                                        <h2>Product 3</h2>
+                                        <p>Description du produit 3.</p>
+                                        <p class="price">$70</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product4.jpg" alt="Product 4">
+                                        <h2>Product 4</h2>
+                                        <p>Description du produit 4.</p>
+                                        <p class="price">$80</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product5.jpg" alt="Product 5">
+                                        <h2>Product 5</h2>
+                                        <p>Description du produit 5.</p>
+                                        <p class="price">$90</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product6.jpg" alt="Product 6">
+                                        <h2>Product 6</h2>
+                                        <p>Description du produit 6.</p>
+                                        <p class="price">$100</p>
+                                        <button>Acheter</button>
+                              </div>
+                    </div>
+                    <a class="prev" onclick="moveSlide('slider2', -1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide('slider2', 1)">&#10095;</a>
           </div>
+          <div class="container">
+                    <div class="product-slider" id="slider3">
+                              <div class="slide">
+                                        <img src="product1.jpg" alt="Product 1">
+                                        <h2>Product 1</h2>
+                                        <p>Description du produit 1.</p>
+                                        <p class="price">$50</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product2.jpg" alt="Product 2">
+                                        <h2>Product 2</h2>
+                                        <p>Description du produit 2.</p>
+                                        <p class="price">$60</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product3.jpg" alt="Product 3">
+                                        <h2>Product 3</h2>
+                                        <p>Description du produit 3.</p>
+                                        <p class="price">$70</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product4.jpg" alt="Product 4">
+                                        <h2>Product 4</h2>
+                                        <p>Description du produit 4.</p>
+                                        <p class="price">$80</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product5.jpg" alt="Product 5">
+                                        <h2>Product 5</h2>
+                                        <p>Description du produit 5.</p>
+                                        <p class="price">$90</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product6.jpg" alt="Product 6">
+                                        <h2>Product 6</h2>
+                                        <p>Description du produit 6.</p>
+                                        <p class="price">$100</p>
+                                        <button>Acheter</button>
+                              </div>
+                    </div>
+                    <a class="prev" onclick="moveSlide('slider3', -1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide('slider3', 1)">&#10095;</a>
           </div>
-          <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
+          <div class="container">
+                    <div class="product-slider" id="slider4">
+                              <div class="slide">
+                                        <img src="product1.jpg" alt="Product 1">
+                                        <h2>Product 1</h2>
+                                        <p>Description du produit 1.</p>
+                                        <p class="price">$50</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product2.jpg" alt="Product 2">
+                                        <h2>Product 2</h2>
+                                        <p>Description du produit 2.</p>
+                                        <p class="price">$60</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product3.jpg" alt="Product 3">
+                                        <h2>Product 3</h2>
+                                        <p>Description du produit 3.</p>
+                                        <p class="price">$70</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product4.jpg" alt="Product 4">
+                                        <h2>Product 4</h2>
+                                        <p>Description du produit 4.</p>
+                                        <p class="price">$80</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product5.jpg" alt="Product 5">
+                                        <h2>Product 5</h2>
+                                        <p>Description du produit 5.</p>
+                                        <p class="price">$90</p>
+                                        <button>Acheter</button>
+                              </div>
+                              <div class="slide">
+                                        <img src="product6.jpg" alt="Product 6">
+                                        <h2>Product 6</h2>
+                                        <p>Description du produit 6.</p>
+                                        <p class="price">$100</p>
+                                        <button>Acheter</button>
+                              </div>
+                    </div>
+                    <a class="prev" onclick="moveSlide('slider4', -1)">&#10094;</a>
+                    <a class="next" onclick="moveSlide('slider4', 1)">&#10095;</a>
           </div>
-          <main>
-                    <section id="products">
-                              <h2>Featured Products</h2>
-                              <div class="slideshow-container">
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 1">
-                                                  <div class="text">Caption for Slide 1</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <!-- Add more slides as needed -->
-                                        <!-- Navigation buttons -->
-                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                              </div>
-                              <!-- Dot indicators for slideshow navigation -->
-                              <div style="text-align:center">
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(2)"></span>
-                                        <!-- Add more dots for additional slides -->
-                    </section>
-                    <section id="about">
-                              <h2>About Us</h2>
-                              <p>Welcome to MeterMag, your trusted source for quality meters. Learn more about our mission and values.</p>
-                    </section>
-                    <section id="products">
-                              <h2>Featured Products</h2>
-                              <div class="slideshow-container">
-                                        <div class="mySlides fade">
-                                                  <img src="catlive2.jpg" alt="Slide 1">
-                                                  <div class="text">Caption for Slide 1</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive2.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive2.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive5.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <!-- Add more slides as needed -->
-                                        <!-- Navigation buttons -->
-                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                              </div>
-                              <!-- Dot indicators for slideshow navigation -->
-                              <div style="text-align:center">
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(2)"></span>
-                                        <!-- Add more dots for additional slides -->
-                              </div>
-                    </section>
-                    <section id="contact">
-                              <h2>Contact Us</h2>
-                              <p>Have questions or need assistance? Contact our customer support team.</p>
-                    </section>
-                    <section id="products">
-                              <h2>Featured Products</h2>
-                              <div class="slideshow-container">
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 1">
-                                                  <div class="text">Caption for Slide 1</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <div class="mySlides fade">
-                                                  <img src="catlive17.jpg" alt="Slide 2">
-                                                  <div class="text">Caption for Slide 2</div>
-                                        </div>
-                                        <!-- Add more slides as needed -->
-                                        <!-- Navigation buttons -->
-                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                              </div>
-                              <!-- Dot indicators for slideshow navigation -->
-                              <div style="text-align:center">
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(1)"></span>
-                                        <span class="dot" onclick="currentSlide(2)"></span>
-                                        <!-- Add more dots for additional slides -->
-                              </div>
-                    </section>
-          </main>
           <footer>
                     <div class="activation-links">
                               <p> Useful links</p>
@@ -569,56 +575,27 @@
           </footer>
           <script>
                     // Déclaration des variables globales
-                    let slideIndex = 0;
-                    const slides = document.querySelectorAll('.mySlides');
-                    const totalSlides = slides.length;
                     const containerWidth = document.querySelector('.container').offsetWidth;
-                    const slider = document.querySelector('.product-slider');
-                    // Fonction pour déplacer les slides
-                    function moveSlide(n) {
+                    // Fonction pour déplacer les slides d'un diaporama spécifique
+                    function moveSlide(sliderId, n) {
+                              const slider = document.getElementById(sliderId);
+                              let slideIndex = parseInt(slider.dataset.slideIndex) || 0;
+                              const totalSlides = slider.querySelectorAll('.slide').length;
                               slideIndex += n;
                               if (slideIndex >= totalSlides) {
                                         slideIndex = 0;
                               } else if (slideIndex < 0) {
                                         slideIndex = totalSlides - 1;
                               }
+                              slider.dataset.slideIndex = slideIndex;
                               slider.style.transform = `translateX(-${slideIndex * containerWidth}px)`;
                     }
-                    // Défilement automatique toutes les 3 secondes
-                    setInterval(() => {
-                              moveSlide(1);
-                    }, 3000);
+                    // Défilement automatique pour chaque diaporama toutes les 3 secondes
+                    const sliders = document.querySelectorAll('.product-slider');
+                    sliders.forEach(slider => {
+                              setInterval(() => {
+                                        moveSlide(slider.id, 1);
+                              }, 3000);
+                    });
           </script>
-          <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-
-                    function plusSlides(n) {
-                              showSlides(slideIndex += n);
-                    }
-
-                    function currentSlide(n) {
-                              showSlides(slideIndex = n);
-                    }
-
-                    function showSlides(n) {
-                              let i;
-                              const slides = document.getElementsByClassName("mySlides");
-                              const dots = document.getElementsByClassName("dot");
-                              if (n > slides.length) {
-                                        slideIndex = 1
-                              }
-                              if (n < 1) {
-                                        slideIndex = slides.length
-                              }
-                              for (i = 0; i < slides.length; i++) {
-                                        slides[i].style.display = "none";
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                        dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slides[slideIndex - 1].style.display = "block";
-                              dots[slideIndex - 1].className += " active";
-                    }
-          </script>
-          </script>
+          </body>
