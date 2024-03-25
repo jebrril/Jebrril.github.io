@@ -530,6 +530,7 @@ slide {
     </div>
     <p id="total-price">Total : $0</p>
     <button onclick="checkout()">Valider la commande</button>
+    <button onclick="afficherPanier()">Voir le panier</button>
   <footer>
                     <div class="activation-links">
                               <p> Useful links</p>
@@ -574,6 +575,8 @@ function checkout() {
     alert('Commande validée !');
     cart = []; // Réinitialise le panier après la validation de la commande
     afficherPanier(); // Met à jour l'affichage du panier après la réinitialisation
+}function afficherPanier() {
+    window.location.href = "panier.html";
 }
     </script>
 </body>
