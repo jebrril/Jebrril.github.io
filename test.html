@@ -524,7 +524,7 @@ slide {
                                         </li>
                               </ul>
                     </nav>
-          </header>
+          </header><button onclick="afficherPanier()">Voir le panier</button>
           <div class="container">
     <div class="product-slider" id="slider1">
                               <div class="slide">
@@ -1029,6 +1029,14 @@ document.querySelectorAll('.next').forEach(nextBtn => {
 });function acheterProduit(nomProduit) {
     // Exemple : ajout du produit au panier
     alert('Vous avez ajouté ' + nomProduit + ' au panier !');
+}function afficherPanier() {
+    let contenuPanier = "Contenu du panier:\n";
+
+    panier.forEach(item => {
+        contenuPanier += `${item.nomProduit} - $${item.prix}\n`;
+    });
+
+    alert(contenuPanier);
 }
  </script> 
           </body>
